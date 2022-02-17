@@ -15,9 +15,9 @@ function watchTask(){
             baseDir:'./dev'
         }
     });
-    watch('./dev/scss/*/**', sassTask);
+    watch('./dev/scss/**/*', sassTask);
     watch('./dev/scripts/**/*/*.js').on('change' ,browserSync.reload);
-    watch('./dev/scripts/**/*/*.html').on('change' ,browserSync.reload);
+    watch('./dev/**/*.html').on('change' ,browserSync.reload);
 }
 
 function sassTask(){
