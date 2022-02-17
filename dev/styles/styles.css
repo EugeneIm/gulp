@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("../fonts/kaushanscript-regular.woff2") format("woff2"), url("../fonts/kaushanscript-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofiapro-light.woff2") format("woff2"), url("../fonts/sofiapro-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KlartextMono-Light";
+  src: url("../fonts/KlartextMono-Light.woff2") format("woff2"), url("../fonts/KlartextMono-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "KlartextMono-Light", serif;
+}
+
+h1, h2, h3 {
+  font-family: "sofiapro-light", sans-serif;
+}
+
+header h1 {
+  font-family: "kaushan_scriptregular", sans-serif;
+}
+
+@media (min-width: 720px) {
+  body {
+    background-color: #ccc;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+@media (min-width: 720px) {
+  .wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+.wrapper main {
+  flex: 1;
+}
+
+header {
+  background-color: #a000af;
+  color: white;
+  padding: 16px 20px;
+}
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+main article h1:first-child {
+  margin-top: 0;
+}
+main article p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #a000af;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
